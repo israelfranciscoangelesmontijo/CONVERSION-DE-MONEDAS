@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main(void){
+	int pesos;
+	float conversion;
+	int dinero;
+	printf("INDIQUE LA CANTIDAD DE PESOS QUE DESEA CONVERTIR:\n");
+	scanf("%d",&pesos);
+	printf("SELECCIONA A LA MONEDA QUE DESEA COONVERTIR\n 1)DOLAR ESTADOUNIDENSE \n 2)EURO\n 3)YEN JAPONES\n 4)PESO CUBANO\n 5)FRANCO SUIZO\n ");
+	printf(":");
+	scanf("%d",&dinero);
+	conversion=0;
+	switch(dinero){
+	case 1:
+	conversion=pesos*0.049;
+	break;
+	case 2:
+	conversion=pesos*0.042;
+	break;
+	case 3:
+	conversion=pesos*5.40;
+	break;
+	case 4:
+	conversion=pesos*1.18;
+	case 5:
+	conversion=pesos*0.045;
+	break;
+	default:
+		printf("OPCION INVALIDA");
+	}
+	printf("LA CONVERSION QUE SELECCIONO ES=\n%f",conversion);
+	return 0;
+  }
